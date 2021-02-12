@@ -5,30 +5,85 @@
 }
 
 body{
-  background-color: black;
+  background-color: grey;
 }
 
+/* MAIN NAV */
 .main_nav {
  position: fixed;
  top: 0;
  left: 0;
  width: 300px;
  height: calc(100% - 90px);
- background-color: grey;
+ background-color: black;
+ padding: 20px 10px 0 15px;
  /* min-height: per lasciar scivolare il piccolo nav +nuova playlist */
 }
 
+.icon {
+  font-size: 25px;
+}
+.icon_home {
+  color: white;
+  border-left: 5px solid green;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+.logo img {
+  max-width: 150px;
+}
+
+.menu_link a {
+  display: block;
+  text-decoration: none;
+  font-size: 15px;
+  margin-top: 10px;
+  padding: 5px 5px;
+}
+.grey {
+  color: grey;
+}
+
+.playlist {
+  margin-top: 20px;
+  color: white;
+}
+
+.plus_playlist {
+  font-size: 50px;
+  color: grey;
+}
+
+.list_playlist {
+  display: flex;
+  align-items: center;
+}
+.crea_playlist {
+  font-size: 20px;
+  margin: 0 20px;
+}
+/* MAIN NAV */
+
+
+/* MAIN CONTENT */
 .main_content {
  width: calc(100% - 300px);
  margin-left: 300px;
  background: white;
 }
 
+
+
+
+
+/* FOOTER PLAY */
 footer {
  position: fixed;
  bottom: 0;
  left: 0;
  height: 90px;
  width: 100%;
- background-color: lightgrey;
+ background-color: blue;
 }

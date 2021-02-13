@@ -6,7 +6,23 @@
 
 body{
   background-color: grey;
+  font-family: 'Roboto', sans-serif;
 }
+/* UTILITY */
+.home,
+.search,
+.library {
+  width: 20px;
+  margin-left: 15px;
+}
+
+.grey {
+  color: grey;
+}
+.grey:hover {
+  color: white;
+}
+/* UTILITY */
 
 /* MAIN NAV */
 .main_nav {
@@ -16,12 +32,12 @@ body{
  width: 300px;
  height: calc(100% - 90px);
  background-color: black;
- padding: 20px 10px 0 15px;
  /* min-height: per lasciar scivolare il piccolo nav +nuova playlist */
 }
 
 .logo {
   margin-bottom: 20px;
+  padding: 10px 10px;
 }
 .logo img {
   max-width: 150px;
@@ -32,30 +48,28 @@ body{
   text-decoration: none;
   font-size: 15px;
   margin-top: 10px;
-  padding: 5px 5px;
+  padding: 0px 5px 0 0;
 }
 .menu_link a:hover {
   color: white;
 }
 
-.icon {
-  font-size: 25px;
-}
 .icon_home {
   color: white;
   border-left: 5px solid green;
 }
 
-.grey {
-  color: grey;
-}
-.grey:hover {
-  color: white;
-}
-
+/* playlist- */
 .playlist {
   margin-top: 20px;
+  margin-left: 20px;
   color: white;
+}
+.playlist h4 {
+  font-size: 15px;
+}
+.playlist span {
+  font-size: 10px;
 }
 
 .list_playlist {
@@ -64,7 +78,7 @@ body{
 }
 
 .plus_playlist {
-  font-size: 40px;
+  font-size: 30px;
   color: grey;
 }
 
@@ -83,14 +97,11 @@ body{
   color: white;
 }
 
-.nome_playlist {
-  margin: 20px 0;
-}
 .nome_playlist ul {
   list-style: none;
 }
 .nome_playlist li {
-  padding: 5px 0px;
+  padding: 5px 0px 0px 0px;
   cursor: pointer;
 }
 .name_play:hover {
@@ -99,15 +110,57 @@ body{
 .nome_playlist span {
   color: grey;
 }
+/* fine playlist- */
+.installa-app {
+  display: flex;
+  flex-direction: row;
+  margin-top: 45px;
+  margin-left: 20px;
+  margin-bottom: -10px;
+}
+.installa-app i {
+  font-size: 15px;
+  color: grey;
+}
+
+.installa {
+  align-self: center;
+  margin-left: 10px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-left: 20px;
+  border-top: 1px solid grey;
+  width: 250px;
+}
+.profile_john {
+  align-self: center
+}
+.profile_john h5 {
+  color: white;
+  margin-left: 5px;
+}
+.profile img {
+  width: 30px;
+  background-color: grey;
+  border-radius: 100%;
+}
+.profile_img,
+.profile_john {
+  margin-top: 10px;
+}
 /* MAIN NAV */
 
 
-/* MAIN CONTENT */
-.main_content {
+/* MAIN UPGRADE */
+.main_upgrade {
  width: calc(100% - 300px);
  height: 70px;
  margin-left: 300px;
- background: #22222e;
+ background: #101017;
 }
 
 .upgrade {
@@ -131,8 +184,16 @@ body{
 .btn_upgrade:hover {
   transform: scale(1.1);
 }
+/* MAIN UPGRADE */
 
 /* MAIN CONTENT */
+
+
+
+
+
+/* FINE MAIN CONTENT */
+
 
 /* FOOTER PLAY */
 footer {
@@ -142,4 +203,17 @@ footer {
  height: 90px;
  width: 100%;
  background-color: blue;
+}
+/* FOOTER */
+
+@media screen and (max-width: 767px) {
+  .main_nav {
+    max-width: 50%;
+  }
+  .installa-app {
+    flex-direction: column;
+  }
+  .profile {
+    flex-direction: column;
+  }
 }

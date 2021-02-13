@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
@@ -12,16 +14,17 @@
   <body>
     <div class="wrapper">
       <main>
+        <!-- NAV LEFT -->
         <section class="main_nav">
           <div class="logo">
             <img class="logo-spotify" src="img/logo.svg" alt="Spotify">
           </div>
           <div class="menu_link">
-            <a class="icon_home"href="#"><i class="icon fas fa-home"></i><span> Home</span></a>
-            <a href="#"><i class="grey icon fas fa-search"></i><span class="grey">Cerca</span></a>
-            <a href="#"><i class="grey icon fas fa-grip-lines-vertical"></i><span class="grey"> La tua libreria</span></a>
+            <a class="icon_home"href="#"><img class="home"src="img/home.svg" alt=""> <span class="hidden-xs">Home</span></a>
+            <a href="#"><img class="search"src="img/search.svg" alt=""> <span class="hidden-xs grey">   Cerca</span></a>
+            <a href="#"><img class="library"src="img/libreria.svg" alt=""> <span class="hidden-xs grey"> La tua libreria</span></a>
           </div>
-          <div class="playlist">
+          <div class="playlist hidden-xs">
             <h4><strong>PLAYLIST</strong></h4>
             <div class="list_playlist">
               <a href="#"><i class="plus_playlist fas fa-plus-square"></i></a>
@@ -39,17 +42,36 @@
               </ul>
             </div>
           </div>
-        </section>
-        <section class="main_content">
-          <div class="upgrade">
-            <a href="#"><button class="btn_upgrade"type="upgrade" name="upgrade">Effettua l'Upgrade</button> </a>
-
+          <div class="installa-app">
+            <div class="download-app"><i class="far fa-arrow-alt-circle-down"></div></i>
+            <div class="installa hidden-xs"><p>Installa App</p></div>
+          </div>
+          <div class="profile">
+            <div class="profile_img"><img src="img/profile.svg" alt="profile"></div>
+            <div class="profile_john hidden-xs"><h5><strong>John Doe</strong></h5></div>
           </div>
         </section>
-      </main>
-      <footer>
+        <!-- FINE NAV -->
+        <!-- UPGRADE -->
+        <section class="main_upgrade">
+          <div class="upgrade">
+            <a href="#"><button class="btn_upgrade"type="upgrade" name="upgrade">Effettua l'Upgrade</button> </a>
+          </div>
+        </section>
+        <!-- FINE UPGRADE -->
+        <!-- CONTENT -->
 
-      </footer>
+
+    
+        <!-- FINE CONTENT -->
+
+
+
+
+      </main>
+    <footer>
+
+    </footer>
     </div>
 
   </body>

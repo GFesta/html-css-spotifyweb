@@ -366,6 +366,7 @@ i.fa-play-circle {
   height: 3px;
   border-radius: 3px;
   background-color: #fff;
+  cursor: pointer;
 }
 .bar i {
 display: none;
@@ -385,6 +386,7 @@ color: #fff;
 width: 25%;
 display: flex;
 align-items: center;
+cursor: pointer;
 }
 .sound-icon {
   margin-left: 15%;
@@ -425,6 +427,32 @@ align-items: center;
     width: 30%;
   }
   .sound a i {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 568px) {
+
+  .flex-container {
+    flex-wrap: wrap;
+  }
+  .flex-container li {
+    flex-basis: calc(100% / 2);
+  }
+  .brano img {
+    width: 30%;
+  }
+  .player {
+    margin-left: 60px;
+  }
+  .time {
+    width: 25%;
+  }
+  .sound {
+    width: 30%;
+  }
+  .sound a i {
+    font-size: 10px;
+    padding: 5px;
     margin-left: 0;
   }
 }

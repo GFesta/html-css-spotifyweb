@@ -407,3 +407,24 @@ align-items: center;
   background-color: #1bcc62e0;
 }
 /* FINE FOOTER */
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .flex-container {
+    flex-wrap: wrap;
+  }
+  .flex-container li {
+    flex-basis: calc(100% / 4);
+  }
+  .brano img {
+    width: 30%;
+  }
+  .player {
+    margin-left: 30px;
+  }
+  .sound {
+    width: 30%;
+  }
+  .sound a i {
+    margin-left: 0;
+  }
+}

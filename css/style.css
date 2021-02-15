@@ -456,3 +456,78 @@ cursor: pointer;
     margin-left: 0;
   }
 }
+@media screen and (max-width: 568px) {
+  .flex-container {
+    flex-wrap: wrap;
+  }
+  .flex-container li {
+    flex-basis: calc(100% / 2);
+  }
+  .main-navbar {
+    width: 50px;
+    align-items: center;
+  }
+  .main-navbar-logo .small {
+    display: block;
+    width: 50%;
+    margin: 5px auto;
+  }
+  .main-navbar-logo .menu img {
+    width: 40%;
+  }
+  .main-navbar-logo .menu li:first-child a {
+    border-left: none;
+  }
+  .main-navbar-logo .logo,
+  .main-navbar-logo span,
+  .main-navbar-playlist,
+  .main-navbar-name,
+  .main-navbar-download span,
+  .main-navbar-download hr {
+    display: none;
+  }
+  .main-navbar-download img {
+    width: 40%;
+    margin-top: 40px;
+  }
+  .main-navbar-download i {
+    margin-left: 5px;
+  }
+  .main-navbar-logo i {
+    font-size: 1.5em;
+  }
+  .main-content {
+    width: calc(100% - 50px);
+  }
+  .button-upgrade {
+    width: 100%;
+  }
+  .brano img {
+    width: 30%;
+  }
+  .player {
+    margin-left: 50px;
+    width: 40%;
+  }
+  .time {
+    width: 25%;
+  }
+  .player-top i {
+    padding: 5px 0;
+    font-size: 12px;
+  }
+  i.fa-play-circle {
+    font-size: 22px;
+  }
+  .sound {
+    width: 30%;
+  }
+  .sound-icon {
+    margin-right: 0;
+  }
+  .sound a i {
+    font-size: 10px;
+    padding: 5px;
+    margin-left: 0;
+  }
+}

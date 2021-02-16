@@ -531,3 +531,8 @@ cursor: pointer;
     margin-left: 0;
   }
 }
+@media screen and (max-width: 460px) and (min-width: 350px) {
+  .button-upgrade {
+    display: none;
+  }
+}

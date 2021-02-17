@@ -109,7 +109,7 @@ body{
 }
 /* main-navbar-name */
 .main-navbar-name{
-  min-height: 150px;
+  height: 80%;
   overflow-y: auto;
   flex-grow: 2;
 }
@@ -186,6 +186,7 @@ body{
   height: 80px;
   padding: 5px;
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 .btn {
   display: inline-block;
